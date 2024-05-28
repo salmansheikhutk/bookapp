@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Add a button that brings up the form below -->
+    <!-- <button onclick="showPrompt()" id = "new-book">NEW BOOK</button> -->
+
+    <button onclick="showModal()" id = "new-book">NEW BOOK</button>
+
+
+    <dialog id="dialog">
+        <form method="dialog">
+            <p>
+                <label>
+                    Name:
+                    <input type="text" required />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Author:
+                    <input type="text" required />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Pages:
+                    <input type="text" required />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Still Reading (Yes/Complete):
+                    <input type="text" required />
+                </label>
+            </p>
+            <button id="confirmBtn" value="default">Confirm</button>
+        </form>
+    </dialog>
+
+        <div id="mybooks">
+
+        </div>
+        <!-- Each Book -->
+        <!-- <div>
+            <p id="A">Name: </p>
+            <p id="B">Author: </p>
+            <p id="C">Pages: </p>
+            <p id="D">Status: </p>
+        </div> -->
+    <script src = "script.js"></script>
+</body>
+</html>
